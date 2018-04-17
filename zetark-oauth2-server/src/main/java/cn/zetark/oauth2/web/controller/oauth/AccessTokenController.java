@@ -2,6 +2,8 @@ package cn.zetark.oauth2.web.controller.oauth;
 
 import cn.zetark.oauth2.Constants;
 import cn.zetark.oauth2.service.OAuthService;
+
+import org.apache.commons.codec.binary.StringUtils;
 import org.apache.oltu.oauth2.as.issuer.MD5Generator;
 import org.apache.oltu.oauth2.as.issuer.OAuthIssuer;
 import org.apache.oltu.oauth2.as.issuer.OAuthIssuerImpl;
@@ -27,6 +29,8 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.net.URISyntaxException;
+import java.util.Arrays;
+import java.util.Collections;
 
 @RestController
 public class AccessTokenController {
@@ -91,6 +95,8 @@ public class AccessTokenController {
             OAuthResponse response = OAuthASResponse
                     .tokenResponse(HttpServletResponse.SC_OK)
                     .setAccessToken(accessToken)
+                    .setRefreshToken(oauthIssuerImpl.refreshToken())
+                    .setTokenType("JWT")
                     .setExpiresIn(String.valueOf(oAuthService.getExpireIn()))
                     .buildJSONMessage();
 

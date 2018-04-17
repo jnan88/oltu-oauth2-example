@@ -14,7 +14,6 @@
     <context:property-placeholder location="classpath:resources.properties"/>
 
     <!-- 开启controller注解支持 -->
-    <!-- 注意事项请参考：http://jinnianshilongnian.iteye.com/blog/1762632 -->
     <context:component-scan base-package="cn.zetark.oauth2.**.web.controller" use-default-filters="false">
         <context:include-filter type="annotation"
                                 expression="org.springframework.stereotype.Controller"/>
@@ -22,8 +21,7 @@
                                 expression="org.springframework.web.bind.annotation.ControllerAdvice"/>
     </context:component-scan>
 
-    <mvc:annotation-driven>
-    </mvc:annotation-driven>
+    <mvc:annotation-driven/>
 
     <!-- 当在web.xml 中   DispatcherServlet使用 <url-pattern>/</url-pattern> 映射时，能映射静态资源 -->
     <mvc:default-servlet-handler/>
