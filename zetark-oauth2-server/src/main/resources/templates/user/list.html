@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header(~{::title},~{},~{})">
+<title>OAuth2 Server 用户列表</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="header clearfix">
+			<nav>
+				<ul class="nav nav-pills pull-right">
+				</ul>
+			</nav>
+			<h3 class="text-muted">OAuth2 Server 用户列表</h3>
+		</div>
+		<div class="alert alert-danger" role="alert"
+			th:if="!${#strings.isEmpty(msg)}" th:text="${msg}"></div>
+		<h3>
+			<a th:href="@{/user/create}">用户新增</a>
+		</h3>
+
+		<table class="table table-bordered table-hover table-condensed">
+			<thead>
+				<tr>
+					<th>用户名</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="user,stat : ${userList}">
+					<td th:text="${user.username}"></td>
+					<td><a th:href="@{/user/{uid}/update(uid=${user.id})}">修改</a>
+						<a th:href="@{/user/{uid}/delete(uid=${user.id})}">删除</a> <a
+						th:href="@{/user/{uid}/changePassword(uid=${user.id})}">改密</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

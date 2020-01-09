@@ -1,0 +1,134 @@
+2020-01-09 11:45:11:454 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 12788 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 11:45:11:458 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 11:45:55:375 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 12790 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 11:45:55:378 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 11:47:03:544 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 12800 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 11:47:03:547 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 11:49:32:635 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 12811 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 11:49:32:637 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 11:50:12:802 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 12814 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 11:50:12:805 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 11:50:15:001 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 2.639 seconds (JVM running for 3.005) 
+2020-01-09 11:51:28:345 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 12814 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 11:51:28:346 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 11:51:28:843 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 0.531 seconds (JVM running for 76.849) 
+2020-01-09 12:00:20:698 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 12895 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 12:00:20:701 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 12:00:23:615 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 3.481 seconds (JVM running for 4.11) 
+2020-01-09 12:02:13:288 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 12895 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 12:02:13:289 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 12:02:13:785 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 0.73 seconds (JVM running for 114.283) 
+2020-01-09 12:02:41:627 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 12895 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 12:02:41:628 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 12:02:42:086 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 0.506 seconds (JVM running for 142.585) 
+2020-01-09 12:11:32:218 INFO  [http-nio-9002-exec-7]:110  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2020-01-09 12:11:32:375 INFO  [http-nio-9002-exec-7]:123  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2020-01-09 12:12:08:455 INFO  [Thread-24]:350  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2020-01-09 12:12:08:468 INFO  [Thread-24]:352  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2020-01-09 12:12:13:513 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 13071 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 12:12:13:515 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 12:12:15:837 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 2.988 seconds (JVM running for 3.38) 
+2020-01-09 12:12:22:456 INFO  [http-nio-9002-exec-1]:110  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2020-01-09 12:12:22:624 INFO  [http-nio-9002-exec-1]:123  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2020-01-09 13:33:43:031 INFO  [Thread-7]:350  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2020-01-09 13:33:43:040 INFO  [Thread-7]:352  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2020-01-09 13:33:43:336 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 13071 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 13:33:43:336 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 13:33:43:885 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 0.733 seconds (JVM running for 4891.587) 
+2020-01-09 13:37:11:038 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 15148 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 13:37:11:043 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 13:37:13:448 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 2.863 seconds (JVM running for 3.302) 
+2020-01-09 14:16:56:938 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 16154 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 14:16:56:941 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 14:16:59:382 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 3.116 seconds (JVM running for 3.535) 
+2020-01-09 14:18:25:344 INFO  [http-nio-9002-exec-8]:110  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2020-01-09 14:18:25:489 INFO  [http-nio-9002-exec-8]:123  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2020-01-09 14:35:05:275 INFO  [Thread-10]:350  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2020-01-09 14:35:05:285 INFO  [Thread-10]:352  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2020-01-09 14:35:10:187 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 16649 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 14:35:10:190 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 14:35:12:667 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 3.23 seconds (JVM running for 3.671) 
+2020-01-09 14:35:13:941 INFO  [http-nio-9002-exec-1]:110  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2020-01-09 14:35:14:112 INFO  [http-nio-9002-exec-1]:123  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2020-01-09 14:51:20:425 INFO  [Thread-10]:350  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2020-01-09 14:51:20:438 INFO  [Thread-10]:352  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2020-01-09 14:51:25:037 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 17037 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 14:51:25:040 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 14:51:27:322 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 2.897 seconds (JVM running for 3.34) 
+2020-01-09 14:51:29:363 INFO  [http-nio-9002-exec-1]:110  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2020-01-09 14:51:29:523 INFO  [http-nio-9002-exec-1]:123  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2020-01-09 14:52:56:023 INFO  [Thread-10]:350  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2020-01-09 14:52:56:033 INFO  [Thread-10]:352  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2020-01-09 14:53:00:635 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 17072 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 14:53:00:638 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 14:53:03:077 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 2.898 seconds (JVM running for 3.292) 
+2020-01-09 14:53:11:506 INFO  [http-nio-9002-exec-1]:110  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2020-01-09 14:53:11:690 INFO  [http-nio-9002-exec-1]:123  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2020-01-09 14:58:44:988 INFO  [Thread-10]:350  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2020-01-09 14:58:45:002 INFO  [Thread-10]:352  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2020-01-09 14:58:52:130 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 17233 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 14:58:52:133 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 14:58:54:381 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 2.876 seconds (JVM running for 3.246) 
+2020-01-09 14:58:57:663 INFO  [http-nio-9002-exec-1]:110  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2020-01-09 14:58:57:832 INFO  [http-nio-9002-exec-1]:123  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2020-01-09 15:03:38:843 INFO  [Thread-10]:350  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2020-01-09 15:03:38:858 INFO  [Thread-10]:352  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2020-01-09 15:03:43:473 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 17343 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 15:03:43:476 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 15:03:45:974 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 3.207 seconds (JVM running for 3.589) 
+2020-01-09 15:03:50:235 INFO  [http-nio-9002-exec-1]:110  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2020-01-09 15:03:50:397 INFO  [http-nio-9002-exec-1]:123  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2020-01-09 15:08:10:081 INFO  [Thread-10]:350  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2020-01-09 15:08:10:091 INFO  [Thread-10]:352  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2020-01-09 15:08:15:240 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 17449 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 15:08:15:243 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 15:08:17:606 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 3.052 seconds (JVM running for 3.461) 
+2020-01-09 15:08:21:357 INFO  [http-nio-9002-exec-1]:110  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2020-01-09 15:08:21:522 INFO  [http-nio-9002-exec-1]:123  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2020-01-09 15:11:00:084 INFO  [Thread-10]:350  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2020-01-09 15:11:00:095 INFO  [Thread-10]:352  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2020-01-09 15:11:05:215 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 17521 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 15:11:05:218 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 15:11:07:516 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 2.907 seconds (JVM running for 3.335) 
+2020-01-09 15:11:10:140 INFO  [http-nio-9002-exec-1]:110  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2020-01-09 15:11:10:308 INFO  [http-nio-9002-exec-1]:123  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2020-01-09 15:18:37:442 INFO  [Thread-10]:350  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2020-01-09 15:18:37:453 INFO  [Thread-10]:352  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2020-01-09 15:18:42:718 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 17716 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 15:18:42:721 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 15:18:45:301 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 3.202 seconds (JVM running for 3.637) 
+2020-01-09 15:18:49:164 INFO  [http-nio-9002-exec-1]:110  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting... 
+2020-01-09 15:18:49:321 INFO  [http-nio-9002-exec-1]:123  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed. 
+2020-01-09 15:22:04:456 INFO  [Thread-7]:350  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated... 
+2020-01-09 15:22:04:468 INFO  [Thread-7]:352  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed. 
+2020-01-09 15:22:04:778 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 17716 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 15:22:04:778 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 15:22:05:490 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 0.883 seconds (JVM running for 203.832) 
+2020-01-09 15:22:11:144 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 17716 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 15:22:11:144 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 15:22:11:661 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 0.554 seconds (JVM running for 210.003) 
+2020-01-09 15:22:55:356 INFO  [http-nio-9002-exec-1]:110  com.zaxxer.hikari.HikariDataSource HikariPool-2 - Starting... 
+2020-01-09 15:22:55:377 INFO  [http-nio-9002-exec-1]:123  com.zaxxer.hikari.HikariDataSource HikariPool-2 - Start completed. 
+2020-01-09 15:48:01:201 INFO  [Thread-18]:350  com.zaxxer.hikari.HikariDataSource HikariPool-2 - Shutdown initiated... 
+2020-01-09 15:48:01:212 INFO  [Thread-18]:352  com.zaxxer.hikari.HikariDataSource HikariPool-2 - Shutdown completed. 
+2020-01-09 15:48:01:667 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 17716 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 15:48:01:667 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 15:48:02:109 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 0.7 seconds (JVM running for 1760.5) 
+2020-01-09 15:48:04:717 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 17716 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 15:48:04:717 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 15:48:05:204 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 0.517 seconds (JVM running for 1763.594) 
+2020-01-09 15:50:15:240 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 17716 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 15:50:15:241 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 15:50:15:646 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 0.569 seconds (JVM running for 1894.041) 
+2020-01-09 15:50:22:286 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 17716 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 15:50:22:286 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 15:50:22:659 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 0.4 seconds (JVM running for 1901.054) 
+2020-01-09 15:51:47:081 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 17716 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 15:51:47:081 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 15:51:47:471 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 0.42 seconds (JVM running for 1985.869) 
+2020-01-09 15:56:15:050 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 17716 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 15:56:15:050 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 15:56:15:391 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 0.545 seconds (JVM running for 2253.798) 
+2020-01-09 15:56:20:968 INFO  [restartedMain]:50   cn.zetark.oauth2.Oauth2ServerApplication Starting Oauth2ServerApplication on ionioMacPro.local with PID 17716 (/Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server/target/classes started by qizai in /Volumes/opt/workspace/github.com/oltu-oauth2-example/zetark-oauth2-server) 
+2020-01-09 15:56:20:968 INFO  [restartedMain]:679  cn.zetark.oauth2.Oauth2ServerApplication The following profiles are active: test 
+2020-01-09 15:56:21:348 INFO  [restartedMain]:59   cn.zetark.oauth2.Oauth2ServerApplication Started Oauth2ServerApplication in 0.405 seconds (JVM running for 2259.755) 

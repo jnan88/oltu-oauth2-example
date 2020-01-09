@@ -1,0 +1,9 @@
+=============================================
+ 
+ :: Name: ${spring.application.name}
+ :: Port: ${server.port} 
+ :: Host: http://localhost:${server.port}${server.servlet.context-path}
+ :: Env : ${spring.profiles.active}
+ :: Spring Boot${spring-boot.formatted-version} ::
+
+=============================================

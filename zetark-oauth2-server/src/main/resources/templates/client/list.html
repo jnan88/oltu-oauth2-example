@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header(~{::title},~{},~{})">
+<title>OAuth2 Server 用户列表</title>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="header clearfix">
+			<nav>
+				<ul class="nav nav-pills pull-right">
+				</ul>
+			</nav>
+			<h3 class="text-muted">OAuth2 Server 应用列表</h3>
+		</div>
+
+		<div class="alert alert-danger" role="alert"
+			th:if="!${#strings.isEmpty(msg)}" th:text="${msg}"></div>
+
+		<div>
+			<h3>
+				<a th:href="@{/client/create}">应用新增</a>
+			</h3>
+		</div>
+
+		<table class="table table-bordered table-hover table-condensed">
+			<thead>
+				<tr>
+					<th>客户端名</th>
+					<th>客户端ID</th>
+					<th>客户端安全KEY</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="client,stat : ${clientList}">
+					<td th:text="${client.clientName}"></td>
+					<td th:text="${client.clientId}"></td>
+					<td th:text="${client.clientSecret}"></td>
+					<td><a th:href="@{/client/{uid}/update(uid=${client.id})}">修改</a>
+						<a th:href="@{/client/{uid}/delete(uid=${client.id})}">删除</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

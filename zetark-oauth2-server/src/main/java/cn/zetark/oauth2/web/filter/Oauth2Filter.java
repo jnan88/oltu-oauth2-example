@@ -38,11 +38,7 @@ public class Oauth2Filter implements Filter{
         try {
             //构建OAuth资源请求
             OAuthAccessResourceRequest oauthRequest = new OAuthAccessResourceRequest((HttpServletRequest) request, ParameterStyle.QUERY); // queryString 方式获取参数
-
-            // OAuthAccessResourceRequest oauthRequest = new OAuthAccessResourceRequest((HttpServletRequest) request, ParameterStyle.HEADER); // 从HttpHead头中获取参数
-
             String accessToken = oauthRequest.getAccessToken();
-
             //验证Access Token
             if (!checkAccessToken(accessToken)) {
                 // 如果不存在/过期了，返回未验证错误，需重新验证

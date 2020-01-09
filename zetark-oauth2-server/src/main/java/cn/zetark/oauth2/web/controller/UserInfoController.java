@@ -29,98 +29,91 @@ import java.util.List;
 @RestController
 @RequestMapping("/v1/openapi")
 public class UserInfoController {
+	@Autowired
+	private OAuthService	oAuthService;
+	@Autowired
+	private UserService		userService;
 
-    @Autowired
-    private OAuthService oAuthService;
+	@RequestMapping("/userInfo")
+	public HttpEntity userInfo(HttpServletRequest request) throws OAuthSystemException, OAuthProblemException {
+		return checkAccessToken(request);
+	}
 
-    @Autowired
-    private UserService userService;
+	/**
+	 * 不校验accessToken
+	 * 
+	 * @param request
+	 * @return
+	 * @throws OAuthSystemException
+	 * @throws OAuthProblemException
+	 */
+	private HttpEntity nocheckAccessToken(HttpServletRequest request)
+			throws OAuthSystemException, OAuthProblemException {
 
-    @RequestMapping("/userInfo")
-    public HttpEntity userInfo(HttpServletRequest request) throws OAuthSystemException, OAuthProblemException {
-        return checkAccessToken(request);
-    }
+		// 构建OAuth资源请求
+		OAuthAccessResourceRequest oauthRequest = new OAuthAccessResourceRequest(request, ParameterStyle.QUERY);
 
+		// 获取Access Token
+		String accessToken = oauthRequest.getAccessToken();
 
-    /**
-     * 不校验accessToken
-     * @param request
-     * @return
-     * @throws OAuthSystemException
-     * @throws OAuthProblemException
-     */
-    private HttpEntity nocheckAccessToken(HttpServletRequest request) throws OAuthSystemException, OAuthProblemException {
+		// 获取用户名
+		String username = oAuthService.getUsernameByAccessToken(accessToken);
+		User user = userService.findByUsername(username);
+		Gson gson = new GsonBuilder().create();
 
-        //构建OAuth资源请求
-        OAuthAccessResourceRequest oauthRequest = new OAuthAccessResourceRequest(request, ParameterStyle.QUERY);
+		return new ResponseEntity(gson.toJson(user), HttpStatus.OK);
+	}
 
-        //获取Access Token
-        String accessToken = oauthRequest.getAccessToken();
+	/**
+	 * 校验accessToken
+	 * 
+	 * @param request
+	 * @return
+	 * @throws OAuthSystemException
+	 */
+	private HttpEntity checkAccessToken(HttpServletRequest request) throws OAuthSystemException {
+		try {
+			// 构建OAuth资源请求
+			OAuthAccessResourceRequest oauthRequest = new OAuthAccessResourceRequest(request, ParameterStyle.QUERY);
+			// 获取Access Token
+			String accessToken = oauthRequest.getAccessToken();
+			// 验证Access Token
+			if (!oAuthService.checkAccessToken(accessToken)) {
+				// 如果不存在/过期了，返回未验证错误，需重新验证
+				OAuthResponse oauthResponse = OAuthRSResponse.errorResponse(HttpServletResponse.SC_UNAUTHORIZED)
+						.setRealm(Constants.RESOURCE_SERVER_NAME).setError(OAuthError.ResourceResponse.INVALID_TOKEN)
+						.buildHeaderMessage();
+				HttpHeaders responseHeaders = new HttpHeaders();
+				responseHeaders.add("Content-Type", "application/json; charset=utf-8");
+				Status status = new Status();
+				status.setCode(HttpStatus.UNAUTHORIZED.value());
+				status.setMsg(Constants.INVALID_ACCESS_TOKEN);
+				Gson gson = new GsonBuilder().create();
+				return new ResponseEntity(gson.toJson(status), responseHeaders, HttpStatus.UNAUTHORIZED);
+			}
+			// 获取用户名
+			String username = oAuthService.getUsernameByAccessToken(accessToken);
+			User user = userService.findByUsername(username);
+			Gson gson = new GsonBuilder().create();
 
-        //获取用户名
-        String username = oAuthService.getUsernameByAccessToken(accessToken);
-        User user = userService.findByUsername(username);
-        Gson gson = new GsonBuilder().create();
-
-        return new ResponseEntity(gson.toJson(user), HttpStatus.OK);
-    }
-
-    /**
-     * 校验accessToken
-     * @param request
-     * @return
-     * @throws OAuthSystemException
-     */
-    private HttpEntity checkAccessToken(HttpServletRequest request) throws OAuthSystemException {
-        try {
-            //构建OAuth资源请求
-            OAuthAccessResourceRequest oauthRequest = new OAuthAccessResourceRequest(request, ParameterStyle.QUERY);
-            //获取Access Token
-            String accessToken = oauthRequest.getAccessToken();
-            //验证Access Token
-            if (!oAuthService.checkAccessToken(accessToken)) {
-                // 如果不存在/过期了，返回未验证错误，需重新验证
-                OAuthResponse oauthResponse = OAuthRSResponse
-                        .errorResponse(HttpServletResponse.SC_UNAUTHORIZED)
-                        .setRealm(Constants.RESOURCE_SERVER_NAME)
-                        .setError(OAuthError.ResourceResponse.INVALID_TOKEN)
-                        .buildHeaderMessage();
-                HttpHeaders responseHeaders = new HttpHeaders();
-                responseHeaders.add("Content-Type", "application/json; charset=utf-8");
-                Status status = new Status();
-                status.setCode(HttpStatus.UNAUTHORIZED.value());
-                status.setMsg(Constants.INVALID_ACCESS_TOKEN);
-                Gson gson = new GsonBuilder().create();
-                return new ResponseEntity(gson.toJson(status), responseHeaders ,HttpStatus.UNAUTHORIZED);
-            }
-            //获取用户名
-            String username = oAuthService.getUsernameByAccessToken(accessToken);
-            User user = userService.findByUsername(username);
-            Gson gson = new GsonBuilder().create();
-
-            return new ResponseEntity(gson.toJson(user), HttpStatus.OK);
-        } catch (OAuthProblemException e) {
-            //检查是否设置了错误码
-            String errorCode = e.getError();
-            if (OAuthUtils.isEmpty(errorCode)) {
-                OAuthResponse oauthResponse = OAuthRSResponse
-                        .errorResponse(HttpServletResponse.SC_UNAUTHORIZED)
-                        .setRealm(Constants.RESOURCE_SERVER_NAME)
-                        .buildHeaderMessage();
-                HttpHeaders headers = new HttpHeaders();
-                headers.add(OAuth.HeaderType.WWW_AUTHENTICATE, oauthResponse.getHeader(OAuth.HeaderType.WWW_AUTHENTICATE));
-                return new ResponseEntity(headers, HttpStatus.UNAUTHORIZED);
-            }
-            OAuthResponse oauthResponse = OAuthRSResponse
-                    .errorResponse(HttpServletResponse.SC_UNAUTHORIZED)
-                    .setRealm(Constants.RESOURCE_SERVER_NAME)
-                    .setError(e.getError())
-                    .setErrorDescription(e.getDescription())
-                    .setErrorUri(e.getUri())
-                    .buildHeaderMessage();
-            HttpHeaders headers = new HttpHeaders();
-            headers.add(OAuth.HeaderType.WWW_AUTHENTICATE, oauthResponse.getHeader(OAuth.HeaderType.WWW_AUTHENTICATE));
-            return new ResponseEntity(HttpStatus.BAD_REQUEST);
-        }
-    }
+			return new ResponseEntity(gson.toJson(user), HttpStatus.OK);
+		} catch (OAuthProblemException e) {
+			// 检查是否设置了错误码
+			String errorCode = e.getError();
+			if (OAuthUtils.isEmpty(errorCode)) {
+				OAuthResponse oauthResponse = OAuthRSResponse.errorResponse(HttpServletResponse.SC_UNAUTHORIZED)
+						.setRealm(Constants.RESOURCE_SERVER_NAME).buildHeaderMessage();
+				HttpHeaders headers = new HttpHeaders();
+				headers.add(OAuth.HeaderType.WWW_AUTHENTICATE,
+						oauthResponse.getHeader(OAuth.HeaderType.WWW_AUTHENTICATE));
+				return new ResponseEntity(headers, HttpStatus.UNAUTHORIZED);
+			}
+			OAuthResponse oauthResponse = OAuthRSResponse.errorResponse(HttpServletResponse.SC_UNAUTHORIZED)
+					.setRealm(Constants.RESOURCE_SERVER_NAME).setError(e.getError())
+					.setErrorDescription(e.getDescription()).setErrorUri(e.getUri()).buildHeaderMessage();
+			HttpHeaders headers = new HttpHeaders();
+			headers.add(OAuth.HeaderType.WWW_AUTHENTICATE, oauthResponse.getHeader(OAuth.HeaderType.WWW_AUTHENTICATE));
+			return new ResponseEntity(HttpStatus.BAD_REQUEST);
+		}
+	}
 }
